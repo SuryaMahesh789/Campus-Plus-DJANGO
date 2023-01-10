@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Web Interface</title>
+</head>
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+
+
+ #card
+    {
+    width:50%;
+    margin:20px 20% 0 40%;
+    border:2px solid black;
+    border-radius:5px;
+    padding:2px;
+    background-color:white;
+
+    }
+
+a
+{
+font-size:x-large;
+}
+
+button a
+{
+font-size:large;
+  text-decoration: none;
+
+}
+
+*{
+ margin: 0px;
+ padding: 0px;
+}
+body{
+ font-family: arial;
+}
+.main{
+
+ margin:0.5%  2% 0;
+}
+
+.card{
+     width: 18%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px;
+     margin: 0%  2% 2%;
+     padding:5px;
+    }
+
+.image img{
+  width: 200px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+ }
+
+.title{
+
+  text-align: center;
+  padding: 10px;
+
+ }
+
+h1{
+  font-size: 20px;
+ }
+
+.des{
+  padding: 3px;
+  text-align: center;
+
+  padding-top: 10px;
+        border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 2px;
+  margin-bottom: 5px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+
+button:hover{
+  background-color:lightyellow;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+
+body
+{
+
+background-image:url(https://png.pngtree.com/background/20211217/original/pngtree-blue-round-technology-dashboard-picture-image_1598386.jpg);
+background-size: cover;
+}
+
+.card
+{
+background-color:white;
+}
+
+
+</style>
+<body>
+<ul>
+  <li><a href="home">Home</a></li>
+  <li><a href="contact">Contact</a></li>
+  <li style="float:right"><a class="active" href="about">About</a></li>
+</ul>
+
+<div class="main">
+
+<!--cards -->
+<div class="card" style="background-color:magenta;">
+<div class="image">
+    <center><img class="image" src="https://static.thenounproject.com/png/847977-200.png"></center>
+   </div>
+<div class="title">
+ <h1>Add Student </h1>
+</div>
+<div class="des">
+<button><a href="addpage">ADD</a></button>
+</div>
+</div>
+
+<!--cards -->
+<div class="card" style="background-color:red;">
+<div class="image">
+   <center> <img class="image" src="https://static.thenounproject.com/png/732584-200.png"></center>
+</div>
+<div class="title">
+ <h1>Remove Student</h1>
+</div>
+<div class="des">
+<button><a href="removepage">REMOVE</a></button>
+</div>
+</div>
+
+
+    <!--cards -->
+<div class="card" style="background-color:tomato;">
+<div class="image">
+   <center> <img class="image" src="https://cdn-icons-png.flaticon.com/512/4/4323.png"></center>
+</div>
+<div class="title">
+ <h1>Search Student</h1>
+</div>
+<div class="des">
+<button><a href="searchpage">SEARCH</a></button>
+</div>
+</div>
+
+<!--cards -->
+<div class="card" style="background-color:orange;">
+<div class="image">
+   <center> <img class="image" src="https://icon-library.com/images/group-icon-png/group-icon-png-26.jpg"></center>
+</div>
+<div class="title">
+ <h1>Show Students</h1>
+</div>
+<div class="des">
+<button><a href="displaypage">DISPLAY</a></button>
+</div>
+</div>
+
+
+    <!--cards -->
+<div class="card" style="background-color:yellow;">
+<div class="image">
+   <center> <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE288JZh_DddwWDr7tYKdFua4UNAMM_U7TlZifqr17r3iKBxKmgWUtrVScRRJkyogeVn8&usqp=CAU"></center>
+</div>
+<div class="title">
+ <h1>Show Admins</h1>
+</div>
+<div class="des">
+<button><a href="showpage">SHOW</a></button>
+</div>
+</div>
+
+
+    <!--cards -->
+<div class="card" style="background-color:green;">
+<div class="image">
+   <center> <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ7TKHo1NrGHSRkso1dt1oE04qoPOGEKCiUA&usqp=CAU"></center>
+</div>
+<div class="title">
+ <h1>Remove Admin</h1>
+</div>
+<div class="des">
+<button><a href="deladmin">DELETE</a></button>
+</div>
+</div>
+
+
+        <!--cards -->
+<div class="card" style="background-color:blue;">
+<div class="image">
+   <center> <img class="image" src="https://thumbs.dreamstime.com/b/man-management-degree-icon-element-man-student-degree-icon-mobile-concept-web-apps-glyph-management-degree-126487854.jpg"></center>
+</div>
+<div class="title">
+ <h1>COURSE ALLOTMENT</h1>
+</div>
+<div class="des">
+<button><a href="manage">ALLOT</a></button>
+</div>
+</div>
+
+
+           <!--cards -->
+<div class="card" style="background-color:greenyellow;">
+<div class="image">
+   <center> <img class="image" src="https://img.freepik.com/free-icon/businessman-discussing-business-report_318-47154.jpg?w=2000"></center>
+</div>
+<div class="title">
+ <h1>MANAGE STUDENT</h1>
+</div>
+<div class="des">
+<button><a href="coursedetails">COURSE DETAILS</a></button>
+</div>
+</div>
+
+
+
+
+</div>
+</body>
+
+</html>

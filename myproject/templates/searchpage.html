@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drop Student</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  background-image:url(https://nation.time.com/wp-content/uploads/sites/8/2013/10/128897647.jpg?w=720&h=480&crop=1);
+  background-size: cover;
+
+}
+
+
+.container
+{
+width:40%;
+margin:10px auto;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 15px;
+  background-color: white;
+border-radius:10px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 15px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 10px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: tomato;
+  color: white;
+  padding: 15px 20px;
+  margin: 0 0 0 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size:x-large;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+  color:black;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+
+a
+{
+font-size:x-large;
+}
+
+.image
+{
+width:200px;
+}
+
+span{
+color:red;
+font-size:x-large;
+}
+
+
+    table,th,td
+        {
+        border:3px solid black;
+        }
+
+
+
+        table {
+            border-collapse: collapse;
+            width:100%;
+            margin:20px auto;
+
+               }
+
+           th, td {
+  padding: 15px;
+  text-align: left;
+  font-size:x-large;
+  background-color:white;
+}
+
+td:hover
+{background-color: coral;
+}
+
+
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="home">Home</a></li>
+  <li><a href="contact">Contact</a></li>
+    <li><a href="index">Admin Interface</a></li>
+  <li style="float:right"><a class="active" href="about">About</a></li>
+</ul>
+
+<form action="searchstudent" method="post">
+  {% csrf_token %}
+  <div class="container">
+    <center><h1>Search Student</h1></center>
+    <hr>
+
+      <center><img class="image" src="https://img.freepik.com/premium-vector/search-job-vacancy-icon-isolated-white-background-vector-illustration_736051-719.jpg?w=2000"></center>
+
+            <label for="name"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="name" name="name" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+
+    <center><span><b>{{message}}</b></span></center>
+    <hr>
+    <button type="submit" class="registerbtn">SEARCH STUDENT</button>
+  </div>
+
+
+</form>
+
+<table>
+    <tr>
+        <th>FULL NAME</th>
+        <th>EMAIL ID</th>
+        <th>SEMISTER</th>
+        <th>SCHOOL</th>
+        <th>ADDRESS</th>
+        <th>CITY</th>
+    </tr>
+
+     <tr>
+        <td>{{l.name}}</td>
+        <td>{{l.email}}</td>
+        <td>{{l.semister}}</td>
+        <td>{{l.school}}</td>
+        <td>{{l.address}}</td>
+        <td>{{l.city}}</td>
+    </tr>
+
+</table>
+
+
+</body>
+
+</html>
+
+

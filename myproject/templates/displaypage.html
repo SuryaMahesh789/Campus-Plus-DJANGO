@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students Details</title>
+
+    <style>
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+a
+{
+font-size:x-large;
+}
+
+
+        table,th,td
+        {
+        border:3px solid black;
+        }
+
+
+        table {
+            border-collapse: collapse;
+            width:90%;
+            margin:20px auto;
+
+               }
+
+           th, td {
+  padding: 15px;
+  text-align: left;
+  font-size:x-large;
+  background-color:white;
+}
+
+td:hover {background-color: coral;}
+
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+
+body
+{
+
+background-image:url(https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZW1wbG95ZWV8ZW58MHx8MHx8&w=1000&q=80);
+background-size: cover;
+}
+    </style>
+</head>
+<body>
+<ul>
+  <li><a href="home">Home</a></li>
+  <li><a href="contact">Contact</a></li>
+    <li><a href="index">Admin Interface</a></li>
+  <li style="float:right"><a class="active" href="about">About</a></li>
+</ul>
+
+<table>
+    <tr>
+        <th>FULL NAME</th>
+        <th>EMAIL ID</th>
+        <th>SEMISTER</th>
+        <th>SCHOOL</th>
+        <th>ADDRESS</th>
+        <th>CITY</th>
+    </tr>
+    {% for i in l %}
+     <tr>
+        <td>{{i.name}}</td>
+        <td>{{i.email}}</td>
+        <td>{{i.semister}}</td>
+        <td>{{i.school}}</td>
+        <td>{{i.address}}</td>
+        <td>{{i.city}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
