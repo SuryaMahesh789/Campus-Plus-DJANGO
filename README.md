@@ -41,9 +41,42 @@
 
 ![course-alloted-successfull](https://user-images.githubusercontent.com/101471548/211529014-b435d8e9-5626-4439-a4c5-6a12066b5e86.png)
 
+
+
 ![course-alloted-failed](https://user-images.githubusercontent.com/101471548/211529072-7036d12b-d61c-4d13-8a9a-d33571477b37.png)
 
 ![course-allotement-anonymous](https://user-images.githubusercontent.com/101471548/211529096-4b554b29-d832-4f99-a309-d47b8f3b5d99.png)
 
 ![course-allotment-details](https://user-images.githubusercontent.com/101471548/211529121-6e76287a-4261-4e6f-9b8a-a14a32938858.png)
+
+
+
+
+
+
+
+
+
+
+![database-homepage(django adminstartion)](https://user-images.githubusercontent.com/101471548/211534850-86aa1abe-bc9d-4cf4-9089-b62ef5b9f0f8.png)
+
+![database-admins](https://user-images.githubusercontent.com/101471548/211534888-144194ff-0ba2-44d6-a111-cf06f913df06.png)
+
+![admin details in database](https://user-images.githubusercontent.com/101471548/211535201-a1bdb8ac-4e64-4c66-adcd-9a2c1b984162.png)
+
+
+![database-students](https://user-images.githubusercontent.com/101471548/211535027-e5309778-ca8d-4b0e-b0f1-d48f8e0077d1.png)
+
+
+![student details in database](https://user-images.githubusercontent.com/101471548/211535078-71a2ddcc-1213-408b-b5eb-bd88bba39157.png)
+
+
+![daatbase-courses](https://user-images.githubusercontent.com/101471548/211534965-7fae6165-0382-4544-a46e-5f36246acaab.png)
+
+
+![course  alloted to student](https://user-images.githubusercontent.com/101471548/211535243-41a8045a-9c64-4ca0-a989-216a70669710.png)
+
+
+
+
 
