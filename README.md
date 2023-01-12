@@ -60,7 +60,7 @@
 ## Course Allotment For Students
 ![course-allotment-page](https://user-images.githubusercontent.com/101471548/211528921-fa7a8294-86df-4f9e-a7da-ae39a59e5d5d.png)
 
-## Course Alloted Successfully -> if student exists in the records
+## Course Allotment Successfully -> if student exists in the records
 ![course-alloted-successfull](https://user-images.githubusercontent.com/101471548/211529014-b435d8e9-5626-4439-a4c5-6a12066b5e86.png)
 
 ## Trying To Allot Course To an Anonymous Student
